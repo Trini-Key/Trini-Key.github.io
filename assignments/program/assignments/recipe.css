@@ -1,0 +1,57 @@
+body{
+	background-color: #FFCC00;
+	color: #000000;
+	font-family: Georgia, Garamond, serif;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+h4, h5, h3{
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+	letter-spacing: 15px;
+}
+
+.mthstyle{
+	font-weight: bold;
+}
+.tstyle, td, th {
+	border: #FFFFFF 1px solid;
+	border-spacing: 0;
+	background-color: #CC9933;
+	color: #FFFFFF
+}
+
+#tab1, #tab2 {
+	margin-top: 20px;
+}
+
+.thstyle {
+	background-color: #003366;
+	border: #FFFFFF solid
+}
+
+h1, h2, .mthstyle, .btn_links {
+	background-color: #F0F0F0;
+	color: #A4A400;
+	font-family: "Century Gothic", Futura, Verdana, sans-serif;
+}
+
+#btns{
+	padding-left: 5%;
+}
+
+#btn1, #btn2{
+	padding-right: 5px;
+}
+
+.btn_links {
+	background-color: #A4A400;
+}
+
+	
+

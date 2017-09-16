@@ -1,0 +1,64 @@
+html{
+	min-height:100%;
+    position:relative;
+}
+
+body{
+	background-image: url("./trinidad-pelau1.jpg");
+	height: 100%;
+	overflow: scroll;
+	clear;
+	background-size: contain;
+}
+
+#h_link{
+	position: relative;
+    min-height: 50pt;
+	background-color: #F0F0F0;
+}
+
+.header_links{	
+	position: absolute;
+    bottom: 25;
+	margin-left: 30%;
+}
+
+.header_links a{
+	padding: 20;
+}
+
+.side_links{
+	max-width: 100pt;
+	min-width: 150pt;
+	background-color: #F0F0F0;
+	margin-top: 5pt;
+	min-height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.sl {
+	margin-top: 300;
+}
+
+.container{
+	float: left;
+	position: absolute;
+	margin-top: 5pt;
+	min-width: 90%;
+	text-align: center;
+	margin-left: 75pt;
+}
+
+.polaroid {
+		margin-bottom: 50;
+		margin-top: 70;
+}
+
+.imgs img{
+	width: 200;
+	height: 200;
+	padding: 20;
+}
+
+

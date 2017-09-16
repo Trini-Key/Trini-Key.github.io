@@ -1,0 +1,175 @@
+body{
+	background-image: url("../img/shed.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+	clear: both;	
+}
+
+#nav {
+	max-height: 75px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.column{
+	width: 50%;	
+	float: left;
+	height: 50px;
+}
+
+#l_arrow{
+	text-align: left;
+}
+
+#r_arrow{
+	text-align:right;
+}
+
+
+.container{
+	position: relative;
+	height: 91vh;
+	width: 100%;	
+}
+
+.nav_arrows:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.nav_img {
+	max-height: 50px;
+	max-width: 50px;
+}
+
+#left_arrow{
+	transform: rotate(90deg);
+	animation: beat linear 7s infinite;
+}
+
+#left2_arrow{
+	transform: rotate(135deg);
+	animation: beat linear 7s infinite;
+}
+
+#right_arrow{
+	transform: rotate(180deg);
+	animation: beat linear 7s infinite;
+}
+
+.nav_arrows a:link{
+}
+
+.nav_arrows a:hover{
+	border: purple dashed;
+	padding-top: 30pt;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.pulse{
+	animation: beat linear 1s infinite; 
+}
+
+@keyframes beat{
+	0% {opacity: 1;}
+	50% {opacity: .1;}
+	100% {opacity: 1;}
+}
+
+#desc{
+	color: white;
+	width: 25vw;
+	opacity: .5;
+}
+
+#clue1{
+	width: 25vw;
+	position: absolute;
+	top: 48%;
+	left: 63%;
+}
+
+#clue2{
+	width: 25vw;
+	position: absolute;
+	top: 78%;
+    right: 0%;
+}
+
+img.hint{
+	animation: rotate ease 7s infinite;
+	position: fixed;
+}
+
+.hint{
+	width: 25px;
+	height: 25px;
+	opacity: .05;
+}
+	
+#cl_1 {
+	color: white;
+	/*background-color: red;*/
+	opacity: .5;
+}
+
+#cl_2 {
+	color: white;
+	/*background-color: red;*/
+	opacity: .5;
+}
+
+.clues p{
+	display: none;
+}
+
+.clues:hover p{
+	display: block;
+}
+
+@keyframes rotate{
+	0% {-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+		transform: rotate(0deg);
+		opacity: .05;}
+	
+	50% {-ms-transform: rotate(360deg); /* IE 9 */
+		-webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+		transform: rotate(360deg);
+		opacity: .08;}
+	
+	100% {-ms-transform: rotate(0deg); /* IE 9 */
+			-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			transform: rotate(0deg);
+			opacity: .05;}
+}
+
+
