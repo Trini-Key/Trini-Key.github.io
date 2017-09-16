@@ -25,6 +25,11 @@ body{
 	margin-left: 30pt;
 }
 
+#quote{
+	background-color: #dddddd;
+	opaque: 2;
+}
+
 div.header_links {
 	border-bottom: 2px navy solid;
 	min-width: 1000pt;
