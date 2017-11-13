@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Game Of Life</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="gameoflife.js"></script>
+        <link rel="stylesheet" type="text/css" href="gameoflife.css"/>
+    </head>
+
+        <body id="body">
+
+        <hr>
+
+        <h1> Game of Life</h1>
+        <div id="canvas"> </div>
+        <div id="console"></div>
+        <hr>
+
+        <label for="rows">Rows: </label><input type="text" name="rows" id="rows" value="25"/><!--for some odd reason these values remain flipped so tags are for opposite values-->
+        <label for="columns">Columns: </label><input type="text" name="columns" id="columns" value="25"/>
+
+        <button id="Submit">Change size</button>
+
+        <hr>
+
+        <button id="step">Step 1</button>
+        <button id="23_steps">23 Steps</button>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+        <label for="life_style">Life_styles</label><select id="life_style">
+            <option value="glider_gun" id="default" selected>Glider Gun</option>
+            <option value="block" id="block">Block</option>
+            <option value="blinker" id="blinker">Blinker</option>
+            <option value="toad" id="toad">Toad</option>
+            <option value="glider" id="glider">Glider</option>
+        </select>
+            <button id="choice">Life</button>
+
+    </body>
+</html>
