@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="editACWindow" alignment="CENTER" minHeight="700.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditAcController">
+   <children>
+      <Label text="Buno" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e 192461">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Modex" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. 00">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Status" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. up, down, phase">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Tsn" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. 0000">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Tso" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. 15000">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Rep. Due" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. 15000">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Organization" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. HMH-461">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label text="Type" />
+      <TextField alignment="CENTER" maxWidth="400.0" minWidth="400.0" promptText="i.e. CH-53E">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Apply" />
+   </children>
+</VBox>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:id="initMAF" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InitWorkOrderController">
+   <columnConstraints>
+      <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="317.0" prefWidth="322.0" />
+      <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="317.0" prefWidth="322.0" />
+      <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="317.0" prefWidth="322.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <Label text="A. Unsched Maint" />
+      <Label text="G. Insp Near Due" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="H. Asset Insp. Near Due" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="I. Component Removal Near Due" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="J. Contigency MAF Process" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label text="E. One Time Inspection" GridPane.rowIndex="4" />
+      <Label text="D. Init Fix Phase" GridPane.rowIndex="3" />
+      <Label text="C. init. Asset Insp." GridPane.rowIndex="2" />
+      <Label text="B. Initiate Inspection" GridPane.rowIndex="1" />
+      <Label text="F. Duplicate MAF" GridPane.columnIndex="2" />
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <children>
+            <Label text="F-1 Screen Help" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets right="50.0" top="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Label text="F-9 Main Menu" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="25.0" right="25.0" top="50.0" />
+               </padding>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Label text="ESC Backout" textAlignment="JUSTIFY" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="50.0" top="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+      <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+      <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+      <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+      <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+   </children>
+</GridPane>
