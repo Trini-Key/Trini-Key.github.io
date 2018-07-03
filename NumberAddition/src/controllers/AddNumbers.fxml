@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddNumberController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0">
+         <children>
+            <Label fx:id="firNumLabel" layoutX="43.0" layoutY="80.0" text="First Number" />
+            <TextField fx:id="txtField1" layoutX="208.0" layoutY="64.0" prefHeight="51.0" prefWidth="410.0" promptText="first number" />
+            <Label fx:id="secNumLabel" layoutX="25.0" layoutY="156.0" text="Second Number" />
+            <Label fx:id="resLabel" layoutX="79.0" layoutY="233.0" text="Result" />
+            <TextField fx:id="txtField2" layoutX="208.0" layoutY="140.0" prefHeight="51.0" prefWidth="410.0" promptText="Second number" />
+            <Button fx:id="add" layoutX="238.0" layoutY="291.0" mnemonicParsing="false" onAction="#add" prefHeight="51.0" prefWidth="138.0" text="Add" />
+            <Button fx:id="clear" layoutX="480.0" layoutY="291.0" mnemonicParsing="false" onAction="#clear" prefHeight="51.0" prefWidth="138.0" text="Clear" />
+            <Button fx:id="exit" layoutX="480.0" layoutY="365.0" mnemonicParsing="false" onAction="#exitP" prefHeight="51.0" prefWidth="138.0" text="Exit" />
+            <Label fx:id="txtField3" layoutX="210.0" layoutY="233.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
