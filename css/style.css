@@ -28,6 +28,11 @@
     clear: both;
     overflow: auto;
 }
+.container{
+    padding-top: 80px;
+    clear: both;
+    overflow: auto;
+}
 
 /*end of my additions*/
 
