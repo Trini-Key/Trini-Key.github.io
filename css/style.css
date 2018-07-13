@@ -23,11 +23,13 @@
     background-color: white;
     color: #1d2124;
 }
+
 .container-fluid{
     padding-top: 80px;
     clear: both;
     overflow: auto;
 }
+
 .container{
     padding-top: 80px;
     clear: both;
