@@ -1,4 +1,4 @@
-package application;
+package models;
 
 import java.util.Vector;
 
@@ -27,15 +27,15 @@ public class Aircraft_Model {
 	MainRotorHub mainRotorHub;
 	TailRotorHub tailRotorHub;
 	Vector<Object> parts;
-	static Aircraft_Model ac0 = new Aircraft_Model(129460, 00, "HMH-461", "CH-53E");
-	static Aircraft_Model ac1 = new Aircraft_Model(129461, 01, "HMH-461", "CH-53E");
-	static Aircraft_Model ac2 = new Aircraft_Model(129462, 02, "HMH-461", "CH-53E");
-	static Aircraft_Model ac3 = new Aircraft_Model(129463, 03, "HMH-461", "CH-53E");
-	static Aircraft_Model ac4 = new Aircraft_Model(129464, 04, "HMH-461", "CH-53E");
-	static Aircraft_Model ac5 = new Aircraft_Model(129465, 05, "HMH-461", "CH-53E");
-	static Aircraft_Model ac6 = new Aircraft_Model(129466, 06, "HMH-461", "CH-53E");
-	static Aircraft_Model ac7 = new Aircraft_Model(129467, 07, "HMH-461", "CH-53E");
-	static Vector<Aircraft_Model> acHolder = new Vector<Aircraft_Model>();
+	public static Aircraft_Model ac0 = new Aircraft_Model(129460, 00, "HMH-461", "CH-53E");
+	public static Aircraft_Model ac1 = new Aircraft_Model(129461, 01, "HMH-461", "CH-53E");
+	public static Aircraft_Model ac2 = new Aircraft_Model(129462, 02, "HMH-461", "CH-53E");
+	public static Aircraft_Model ac3 = new Aircraft_Model(129463, 03, "HMH-461", "CH-53E");
+	public static Aircraft_Model ac4 = new Aircraft_Model(129464, 04, "HMH-461", "CH-53E");
+	public static Aircraft_Model ac5 = new Aircraft_Model(129465, 05, "HMH-461", "CH-53E");
+	public static Aircraft_Model ac6 = new Aircraft_Model(129466, 06, "HMH-461", "CH-53E");
+ 	public static Aircraft_Model ac7 = new Aircraft_Model(129467, 07, "HMH-461", "CH-53E");
+	public static Vector<Aircraft_Model> acHolder = new Vector<Aircraft_Model>();
 	
 	public void addAllVectior(Aircraft_Model ac) {
 		acHolder.add(ac);
@@ -84,88 +84,88 @@ public class Aircraft_Model {
 		Vector<Parts> parts;		
 	}
 	
-	protected void setTsn(int tsn) {
+	public void setTsn(int tsn) {
 		this.tsn = tsn;
 	}
 	
-	protected void setTso(int tso) {
+	public void setTso(int tso) {
 		this.tso = tso;
 	}
 	
-	protected void setModex(int modex) {
+	public void setModex(int modex) {
 		this.modex = modex;
 	}
 	
-	protected int getTsn() {
+	public int getTsn() {
 		return tsn;
 	}
 	
-	protected int getTso() {
+	public int getTso() {
 		return tso;
 	}
 	
-	protected int getModex() {
+	public int getModex() {
 		return modex;
 	}
 	
-	protected int getBuno() {
+	public int getBuno() {
 		return buno;
 	}
 	
-	protected int getPhInterval() {
+	public int getPhInterval() {
 		return phaseInterval;
 	}
 	
-	protected int getPhDue() {
+	public int getPhDue() {
 		return phaseDue;
 	}
 	
-	protected int getTsi() {
+	public int getTsi() {
 		return tsi;
 	}
 	
-	protected String getnextInsp() {
+	public String getnextInsp() {
 		return nextInsp;
 	}
 	
-	protected String getstatus() {
+	public String getstatus() {
 		return status;
 	}
 	
-	protected String getstate() {
+	public String getstate() {
 		return state;
 	}
 	
-	protected String getlastPhase() {
+	public String getlastPhase() {
 		return lastPhase;
 	}
 	
-	protected String getOrg() {
+	public String getOrg() {
 		return org;
 	}
 	
-	protected String getAcType() {
+	public String getAcType() {
 		return acftType;
 	}
 	
-	protected Engine getEng() {
+	public Engine getEng() {
 		return engine;
 	}
 	
-	protected MainRotorHub getMRH() {
+	public MainRotorHub getMRH() {
 		return mainRotorHub;
 	}
 	
-	protected TailRotorHub getTRH() {
+	public TailRotorHub getTRH() {
 		return tailRotorHub;
 	}
 	
-	protected Aircraft_Model createDefAc() {
+	public Aircraft_Model createDefAc() {
 		Aircraft_Model ac1 = new Aircraft_Model();
 		return ac1;
 	}
 	
-	protected Aircraft_Model createAc(int b, int m, String o, String t) {
+	public Aircraft_Model createAc(int b, int m, String o, String t) {
 		
 		Aircraft_Model ac = new Aircraft_Model(b, m, o, t);
 		acHolder.add(ac);	
@@ -173,22 +173,22 @@ public class Aircraft_Model {
 		return acHolder.get(count);	
 	}
 	
-	protected void setTsn(Vector a, int m, int tsn) {
+	public void setTsn(Vector a, int m, int tsn) {
 		a.get(m);
 		this.tsn = tsn;
 	}
 	
-	protected void setTso(Vector a, int m, int tso) {
+	public void setTso(Vector a, int m, int tso) {
 		a.get(m);
 		this.tso = tso;
 	}
 	
-	protected void setModex(Vector a, int m, int tso) {
+	public void setModex(Vector a, int m, int tso) {
 		a.get(m);
 		this.modex = modex;
 	}
 	
-	protected TreeItem<Aircraft_Model> addAc(Aircraft_Model ac) {
+	public TreeItem<Aircraft_Model> addAc(Aircraft_Model ac) {
 		TreeItem<Aircraft_Model> acTree = new TreeItem<>(ac);
 		return acTree;
 	}

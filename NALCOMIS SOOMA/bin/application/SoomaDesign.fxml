@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane fx:id="logInWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="350.0" prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+<GridPane fx:id="logInWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="350.0" prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />

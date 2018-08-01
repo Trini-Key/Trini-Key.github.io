@@ -1,8 +1,12 @@
-package application;
+package controllers;
 
+import application.AddBirdWindow;
+import application.Main;
+import application.MainView;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import models.Aircraft_Model;
 
 public class LoginController {
 	protected Main loginView;
