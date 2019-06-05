@@ -14,9 +14,9 @@ public class EditAcWindow {
 			primaryStage.setMinWidth(400);
 			primaryStage.setMaxHeight(500);
 			primaryStage.setMaxWidth(400);
-			VBox editACWindow = (VBox)FXMLLoader.load(getClass().getResource("EditAC.fxml"));
+			VBox editACWindow = (VBox)FXMLLoader.load(getClass().getResource("/resources/EditAC.fxml"));
 			Scene scene = new Scene(editACWindow,350,200);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

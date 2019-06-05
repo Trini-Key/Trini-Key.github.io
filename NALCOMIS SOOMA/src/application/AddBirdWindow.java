@@ -12,9 +12,9 @@ public class AddBirdWindow {
 			Stage primaryStage = new Stage();
 			primaryStage.setMinHeight(400);
 			primaryStage.setMinWidth(400);
-			VBox addACWindow = (VBox)FXMLLoader.load(getClass().getResource("addAC.fxml"));
+			VBox addACWindow = (VBox)FXMLLoader.load(getClass().getResource("/resources/addAC.fxml"));
 			Scene scene = new Scene(addACWindow,350,200);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

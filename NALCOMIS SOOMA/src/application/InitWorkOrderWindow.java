@@ -13,9 +13,9 @@ public class InitWorkOrderWindow {
 			Stage primaryStage = new Stage();
 			primaryStage.setMinHeight(600);
 			primaryStage.setMinWidth(1000);
-			GridPane initMaf = (GridPane) FXMLLoader.load(getClass().getResource("InitWorkOrder.fxml"));
+			GridPane initMaf = (GridPane) FXMLLoader.load(getClass().getResource("/resources/InitWorkOrder.fxml"));
 			Scene scene = new Scene(initMaf, 800, 600);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {

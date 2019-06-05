@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane fx:id="rootPane" minHeight="200.0" minWidth="350.0" prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <GridPane fx:id="logInWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="350.0" prefHeight="300.0" prefWidth="800.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="uName" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+            <PasswordField fx:id="pWord" promptText="Password" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="login" mnemonicParsing="false" onAction="#submission" text="Sign in" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" />
+            <Region prefHeight="200.0" prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+            <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+            <Label text="User: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="Password: " GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

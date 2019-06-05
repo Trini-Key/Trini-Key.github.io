@@ -2,7 +2,7 @@ package models;
 
 public class User {
 	
-	String fName, lName, pWord, workCenter, job;
+	String fName, lName, workCenter, job, pWord;
 	int userType;
 	
 	public User() {
@@ -12,7 +12,6 @@ public class User {
 		workCenter = "Maintenance-Admin";
 		job = "Data-Specialist";
 		userType = 1;
-		
 	}
 	
 	public User(String fName, String lName, String pWord, String workCenter, String job) {
@@ -21,7 +20,7 @@ public class User {
 		this.pWord = pWord;
 		this.workCenter = workCenter;
 		this.job = job;
-		userType = 0;
+		userType = 2;
 	}
 	
 	public User(String fName, String lName, String pWord, String workCenter, String job, int type) {

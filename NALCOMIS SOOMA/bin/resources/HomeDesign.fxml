@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane fx:id="rootPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.soomaController">
+   <children>
+      <BorderPane fx:id="root" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnSpan="2147483647">
+                     <children>
+                        <Label text="Buno: " />
+                        <Label text="Rem Int: " GridPane.columnIndex="2" />
+                        <Label text="Modex: " GridPane.rowIndex="1" />
+                        <Label text="TSO: " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Status: " GridPane.rowIndex="2" />
+                        <Label text="Rep Due: " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="TSN: " GridPane.columnIndex="1" />
+                        <Label fx:id="bunoVal" text="Label" GridPane.halignment="CENTER" />
+                        <Label fx:id="modexVal" text="Label" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <Label fx:id="statusVal" text="Label" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                        <Label fx:id="tsnVal" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Label fx:id="tsoVal" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <Label fx:id="repDueVal" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                        <Label fx:id="remIntVal" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="10.0" prefWidth="242.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="417.0" minWidth="10.0" prefWidth="298.0" />
+                        <ColumnConstraints maxWidth="287.0" minWidth="102.0" prefWidth="252.0" />
+                        <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                     <left>
+                        <VBox prefHeight="329.0" prefWidth="387.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="Phase A">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="100.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Phase B">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Phase C">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Phase D">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </left>
+                     <right>
+                        <VBox prefHeight="446.0" prefWidth="393.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="25 Hour">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="100.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="50 Hour">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="100 Hour">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="150 Hour">
+                                 <VBox.margin>
+                                    <Insets left="150.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </right>
+                     <bottom>
+                        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" text="View Insp">
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="newMafBtn" mnemonicParsing="false" text="New MAF">
+                                 <HBox.margin>
+                                    <Insets left="383.0" top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <ListView fx:id="birdList" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <contextMenu>
+                  <ContextMenu fx:id="contextMenu">
+                    <items>
+                      <MenuItem fx:id="edit" mnemonicParsing="false" text="Edit" />
+                        <MenuItem fx:id="remove" mnemonicParsing="false" text="Remove AC" />
+                        <MenuItem fx:id="add" mnemonicParsing="false" text="Add AC" />
+                        <MenuItem fx:id="view" mnemonicParsing="false" text="View" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ListView>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

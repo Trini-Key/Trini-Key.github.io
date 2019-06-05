@@ -1,9 +1,12 @@
 package application;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 
 public class Main extends Application {
@@ -11,13 +14,13 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			primaryStage.setMinHeight(200);
-			primaryStage.setMinWidth(450);
-			primaryStage.setMaxHeight(200);
-			primaryStage.setMaxWidth(450);
-			GridPane root = (GridPane) FXMLLoader.load(getClass().getResource("SoomaDesign.fxml"));
+			primaryStage.setMinHeight(400);
+			primaryStage.setMinWidth(850);
+//			primaryStage.setMaxHeight(400);
+//			primaryStage.setMaxWidth(850);
+			AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("/resources/SoomaDesign.fxml"));
 			Scene scene = new Scene(root, 350, 200);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
