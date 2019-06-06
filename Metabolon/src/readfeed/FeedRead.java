@@ -19,13 +19,18 @@ import java.util.*;
 
 public class FeedRead {
 
-	// this will take the date passed in and convert it to date format and return
-	// it.
-	public static LocalDate formatDate(String strDate) throws ParseException {
+	/*
+	 * this will take the date passed in and convert it to date format and return
+	 * it. I realized that this only accounts for one format of date. So assuming
+	 * all dates are formatted in this manner. Sat, 01 Jun 2019 21:54:23 GMT
+	 */
+	public static LocalDateTime formatDate(String strDate) throws ParseException {
+
 		String date = strDate;
-		// set the format of the date. i.e. MON 01 JUN 2019 21:54:23 GMT
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, d MMM yyyy", Locale.ENGLISH);
-		LocalDate dateTime = LocalDate.parse(date, formatter);
+		System.out.println(strDate);
+		// set the format of the date. i.e. Sat, 01 Jun 2019 21:54:23 GMT
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, dd MMM yyyy HH:mm:ss zzz", Locale.US);
+		LocalDateTime dateTime = LocalDateTime.parse(strDate, formatter);
 
 		return dateTime;
 	}
@@ -82,7 +87,7 @@ public class FeedRead {
 							}
 						}
 					}
-					
+
 					in.close();
 				}
 
@@ -103,7 +108,6 @@ public class FeedRead {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
 
 }
