@@ -19,7 +19,8 @@ import java.util.*;
 
 public class FeedRead {
 
-	// this will take the date passed in and convert it to another format
+	// this will take the date passed in and convert it to date format and return
+	// it.
 	public static LocalDate formatDate(String strDate) throws ParseException {
 		String date = strDate;
 		// set the format of the date. i.e. MON 01 JUN 2019 21:54:23 GMT
@@ -36,21 +37,22 @@ public class FeedRead {
 	 */
 	public static String feedActivity(Map<String, List<String>> dictionary, int daysInactive) {
 		try {
+
 			// this variable is meant to hold the difference of days between current day and
 			// last day of activity of a feed.
 			int diffDay = 0;
+			String sourceCode = "";
+			String line;
+
 			// Iterate over the dictionary keys and all its values I assume are held in a
 			// list.
 			for (String name : dictionary.keySet()) {
 				List<String> url = dictionary.get(name);
 				for (int i = 0; i < url.size(); i++) {
-					URL rssUrl = new URL(url.get(i));
 
+					URL rssUrl = new URL(url.get(i));
 					BufferedReader in = new BufferedReader(new InputStreamReader(rssUrl.openStream()));
 
-					String sourceCode = "";
-					String line;
-					String inactiveFeed = "";
 					while ((line = in.readLine()) != null) {
 						// if the line in the page contains <pubDate> then carry out the rest of
 						// statements
@@ -74,14 +76,17 @@ public class FeedRead {
 							diffDay = LocalDate.now().getDayOfYear() - formatDate(sourceCode).getDayOfYear();
 
 							if (diffDay >= daysInactive) {
-								// System.out.println(x);
+								System.out.println(name + "has " + daysInactive + " days inactive");
+							} else {
+								continue;
 							}
 						}
 					}
-					inactiveFeed += name + " inactive for " + " days";
+					
 					in.close();
-					return sourceCode;
 				}
+
+				return sourceCode;
 			}
 		} catch (MalformedURLException mue) {
 			System.out.println("Malformed URL");
@@ -98,9 +103,6 @@ public class FeedRead {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// next step I will replace this string with a dictionary and activate the
-		// method to go through and find all the dates.
-		// System.out.println(feedActivity("http://rss.cnn.com/rss/edition.rss"));
 
 	}
 
